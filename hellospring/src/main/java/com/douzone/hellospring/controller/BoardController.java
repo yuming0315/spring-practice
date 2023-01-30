@@ -19,7 +19,7 @@ public class BoardController {
 	}
 	
 	@ResponseBody
-	@RequestMapping("/board/view/{no}")
+	@RequestMapping("/board/view/{no}") // /board/view/10 등을 처리할때
 	public String view(@PathVariable("no") Long no) {
 		return "BoardController.view("+no+")";
 	}

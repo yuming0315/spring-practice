@@ -27,7 +27,7 @@
 		</table>
 	</form>
 	<c:set var="count" value="${fn:length(list) }" />
-	<c:forEach items="${list }" var="vo">
+	<c:forEach items="${list }" var="vo" varStatus="status">
 		<br>
 		<table width=510 border=1>
 			<tr>
