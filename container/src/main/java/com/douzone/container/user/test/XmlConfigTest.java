@@ -34,6 +34,7 @@ public class XmlConfigTest {
 		user = ac.getBean(User.class);
 		System.out.println(user.getName());
 		// Annotation Scan 설정에서는 Bean id가 자동으로 부여된다
+		// 메소드와 클래스이름 등 id가 같은 게 여러개가 되지않게 이름 처음부터 잘 짓기
 		user = (User) ac.getBean("user");
 	}
 
